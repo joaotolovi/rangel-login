@@ -1,0 +1,129 @@
+
+.cadastro_form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login_form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro_sucesso{
+    display: none;
+    background-color: greenyellow
+}
+
+.login_button_page{
+    display: none;
+}
+
+/* Estilização do formulário de cadastro */
+.cadastro_form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro_form label {
+    margin-bottom: 8px;
+}
+
+.cadastro_form input {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.password-container {
+    position: relative;
+}
+
+#mostrar_senha {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.login_button_page {
+    margin-top: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+
+.login_button_page {
+    margin-top: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* Estilização do formulário de login */
+.login_form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login_form label {
+    margin-bottom: 8px;
+}
+
+.login_form input,
+.login_form button {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.msg {
+    display: none;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #f79595;
+}
+
+.cadastro_form button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cadastro_form button:hover {
+    background-color: #2980b9;
+}
+
+.login_button{
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}

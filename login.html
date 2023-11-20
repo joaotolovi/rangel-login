@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Login</title>    
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+    <form class="login_form">
+        <label>Login</label>
+        <input type="text" name="login" />
+        <label>Senha</label>
+        <div class="password-container">
+            <input type="password" name="senha" id="senhaInput" />
+            <button type="button" id="mostrar_senha">Mostrar Senha</button>
+        </div>
+        <input type="submit" value="Entrar" class="login_button"/>
+        <label class="msg" style="display: none; background-color: rgb(247, 149, 149);">1522</label>
+    </form>
+</html>
+
+<script>
+    var form = document.querySelector('.login_form');
+    form.addEventListener('submit', function(e){
+        e.preventDefault();
+        let login = form.login.value;
+        let senha = form.senha.value;
+        let msg = document.querySelector('.msg');
+        if(login === 'aluno@email.com.br' && senha === '0123456789'){
+            msg.style.display = 'block';
+            msg.textContent = 'Login efetuado com sucesso';
+            msg.style.backgroundColor = 'rgb(149, 247, 149)';
+            
+        }else{
+            msg.textContent = 'Login ou senha incorretos';
+            msg.style.display = 'block';
+            msg.style.backgroundColor = 'rgb(247, 149, 149)';
+        }
+    });
+
+    var mostrar_senhaButton = document.getElementById('mostrar_senha');
+    mostrar_senhaButton.addEventListener('click', function() {
+        if (senhaInput.type === 'password') {
+            senhaInput.type = 'text';
+            mostrar_senhaButton.textContent = 'Ocultar Senha';
+        } else {
+            senhaInput.type = 'password';
+            mostrar_senhaButton.textContent = 'Mostrar Senha';
+        }
+    });
+</script>
